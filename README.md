@@ -5,7 +5,7 @@ SAAS code has been first published on my former Oracle blog in 2015 (excerpt sti
 
 ## Some interesting links about PL/SQL
 
-<a href="https://www.oracle.com/pls/topic/lookup?ctx=en/database/oracle/oracle-database/19&id=TDDDG10000">2 Day Developer's Guide: Create Applications with SQL and PL/SQL </a>
+<a href="https://www.oracle.com/pls/topic/lookup?ctx=en/database/oracle/oracle-database/19&id=TDDDG10000">Oracle Database documentation: 2 Day Developer's Guide: Create Applications with SQL and PL/SQL </a>
 
 <a href="https://www.neooug.org/gloc/Presentations/2019/FeuersteinBuilding%20APIs%20in%20PLSQL.pdf">Building APIs in PL/SQL by Steven Feuerstein</a>
 
