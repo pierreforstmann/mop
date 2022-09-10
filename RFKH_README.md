@@ -1,6 +1,23 @@
 ## Retrieving foreign key hierarchy
 
-First database objects using `rfkh.sql`.
+First create database objects using `rfkh.sql`:
+
+```
+SQL> @rfkh
+
+Type dropped.
+
+
+Type created.
+
+
+Type created.
+
+
+Function created.
+
+SQL> 
+```
 
 ### Examples
 
