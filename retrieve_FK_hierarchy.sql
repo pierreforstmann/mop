@@ -8,8 +8,8 @@ drop type MyTableType
 ;
 
 create or replace type myScalarType as object 
-  ( lvl	 number, 
-   tname  varchar2(30) 
+  (level_number	 number, 
+   table_name  varchar2(30) 
   ) 
 /
 
@@ -18,14 +18,14 @@ create or replace type myTableType as table of myScalarType
 
 create or replace 
  function depends( p_table_name  in varchar2, 
-    		       p_lvl in number default 1 ) return myTableType 
+    		           p_lvl in number default 1 ) return myTableType 
   authid_ current_user 
   as 
     	    l_data myTableType := myTableType(); 
     	    p_rname varchar2(30); 
      
    	    procedure recurse( p_cname in varchar2, 
-   			               p_lvl   in number ) 
+   			                   p_lvl   in number ) 
    	    is 
    	    p_rname varchar2(30); 
    	    begin 
@@ -67,5 +67,4 @@ create or replace
    	    end loop; 
    	    return l_data; 
    	end; 
-
 /
