@@ -19,7 +19,7 @@ create or replace type myTableType as table of myScalarType
 create or replace 
  function depends( p_table_name  in varchar2, 
     		           p_lvl in number default 1 ) return myTableType 
-  authid_ current_user 
+  authid current_user 
   as 
     	    l_data myTableType := myTableType(); 
     	    p_rname varchar2(30); 
