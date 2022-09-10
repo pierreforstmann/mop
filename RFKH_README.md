@@ -1,8 +1,8 @@
 ## Retrieving foreign key hierarchy
 
-Create database objects using `rfkh.sql`
+First database objects using `rfkh.sql`.
 
-### Exemples
+### Examples
 
 #### Create tables and constraints:
 
