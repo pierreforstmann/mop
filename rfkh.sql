@@ -1,5 +1,5 @@
 --
--- retrieve_FK_hierarchy.sql
+-- rfkh.sql
 --
 -- assuming all tables belong to same schema
 --
