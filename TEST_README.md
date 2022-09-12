@@ -32,6 +32,7 @@ Connect with a user account having administration privileges and run:
 ## Running TEST application
 
 ```
+
 SQL> connect app_user/password
 Connected.
 SQL> 
@@ -64,18 +65,19 @@ no rows selected
 
 SQL> --
 SQL> exec app_code.qa_pkg.add_q('Question 1 ...');
-Question : 7 created.
+Question: 1 saved.
 
 PL/SQL procedure successfully completed.
 
 SQL> --
-SQL> exec app_code.qa_pkg.add_a(7, 1, '... Q1 - Answer 1 ... ');
+SQL> exec app_code.qa_pkg.add_a(1, 1, '... Q1 - Answer 1 ... ');
+Answer: 1 for question: 1 saved.
 
 PL/SQL procedure successfully completed.
 
 SQL> --
 SQL> var c refcursor
-SQL> exec app_code.qa_pkg.get_q(7, :c);
+SQL> exec app_code.qa_pkg.get_q(1, :c);
 
 PL/SQL procedure successfully completed.
 
@@ -83,10 +85,10 @@ SQL> print c
 
 	ID QTEXT
 ---------- --------------------------------------------------
-	 7 Question 1 ...
+	 1 Question 1 ...
 
 SQL> --
-SQL> exec app_code.qa_pkg.get_a(7, :c);
+SQL> exec app_code.qa_pkg.get_a(1, :c);
 
 PL/SQL procedure successfully completed.
 
@@ -94,10 +96,8 @@ SQL> print
 
 	ID	   NO ATEXT						 S
 ---------- ---------- -------------------------------------------------- -
-	 7	    1 ... Q1 - Answer 1 ...				 n
+	 1	    1 ... Q1 - Answer 1 ...				 n
 
 SQL> --
 SQL> 
 ```
-
-
