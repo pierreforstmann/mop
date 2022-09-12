@@ -13,8 +13,6 @@ CONNECT app_code/password
 DROP SYNONYM q;
 DROP SYNONYM a;
 
-WHENEVER SQLERROR EXIT FAILURE;
-
 CREATE SYNONYM q FOR app_data.q;
 CREATE SYNONYM a FOR app_data.a;
 
@@ -47,8 +45,8 @@ AS
   l_id q.id%TYPE;
  BEGIN
   INSERT INTO q(qtext) VALUES (p_text) returning id into l_id;
-  DBMS_OUTPUT.PUT_LINE('Question : ' || l_id || ' created.');
   COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Question: ' || l_id || ' saved.');
  END add_q;
 
  PROCEDURE add_a
@@ -68,9 +66,11 @@ AS
   INSERT INTO a(id, no, atext, solution) 
    VALUES(p_id, p_no, p_text, p_solution);
   COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Answer: ' || p_no || ' for question: ' || l_id || ' saved.');
   EXCEPTION 
    WHEN NO_DATA_FOUND THEN
     DBMS_OUTPUT.PUT_LINE('ERROR: Question id=' || p_id || ' not found');
+    ROLLBACK;
  END add_a;
 
  PROCEDURE get_q
@@ -109,7 +109,4 @@ show errors
 ---------------------------------------------
 
 GRANT EXECUTE ON qa_pkg TO app_user;
-GRANT EXECUTE ON qa_pkg TO app_admin_user;
-
-exit
 
