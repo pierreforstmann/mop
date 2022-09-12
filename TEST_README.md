@@ -11,6 +11,10 @@ TEST is a very simple application written in PL/SQL that shows how to implement 
 Credits: this example is based on <a href=https://docs.oracle.com/en/database/oracle/oracle-database/19/tdddg/developing-simple-database-application.html#GUID-98FFDC3A-FD76-4466-921C-F0E411829CD7>
 Developing a Simple Oracle Database Application chapter from  2 Day Developer's Guide </a>.
 
+There 3 schemas:
+- `APP_DATA` owning the tables and indexes
+- `APP_CODE` owning the PL/SQL package that execute DML statements on `APP_DATA` tables
+- `APP_USER` does not own any objects, does not have any privilege on `APP_DATA` objects and only has EXECUTE privilege on `APP_CODE` PL/SQL package.
 
 ## Installing TEST application
 
