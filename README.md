@@ -16,7 +16,7 @@ SAAS code has been first published on my former Oracle blog in 2015 (excerpt sti
 ### Presentations, AskTom discussion and blog articles:
 <a href="https://www.neooug.org/gloc/Presentations/2019/FeuersteinBuilding%20APIs%20in%20PLSQL.pdf">Building APIs in PL/SQL by Steven Feuerstein</a>
 
-<a href="https://asktom.oracle.com/pls/apex/asktom.search?tag=considering-sql-as-a-service">A long and interesting discussion on table APIs (TAPI) vs transactional APIs (XAPIs) by Tom Kyte and Steven Feuerstein</a>
+<a href="https://asktom.oracle.com/pls/apex/asktom.search?tag=considering-sql-as-a-service">A long and interesting discussion on table APIs (TAPI) vs transactional APIs (XAPI) by Tom Kyte and Steven Feuerstein</a>
 
 <a href="http://stevenfeuersteinonplsql.blogspot.com/2018/05/the-smartdb-resource-center.html">SmartDB Resource Center</a>
 
