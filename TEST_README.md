@@ -8,7 +8,7 @@ TEST is a very simple application written in PL/SQL that shows how to implement 
 - SQL statements are written by human hand
 - SQL statements exploit the full power of set-based SQL
 
-This example is using <a href=https://docs.oracle.com/en/database/oracle/oracle-database/19/tdddg/developing-simple-database-application.html#GUID-98FFDC3A-FD76-4466-921C-F0E411829CD7>
+Credits: this example is based on <a href=https://docs.oracle.com/en/database/oracle/oracle-database/19/tdddg/developing-simple-database-application.html#GUID-98FFDC3A-FD76-4466-921C-F0E411829CD7>
 Developing a Simple Oracle Database Application chapter from  2 Day Developer's Guide </a>.
 
 
