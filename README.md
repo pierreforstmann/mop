@@ -1,7 +1,7 @@
 # pl-sql
 Miscellaneous Oracle PL/SQL code:
 - <a href="https://github.com/pierreforstmann/pl-sql/blob/main/SAAS_README.md">PL/SQL package implementing schema as a service with definer rights</a>
-- <a href="https://github.com/pierreforstmann/pl-sql/blob/main/RFKH_README.md">displaying foreign key hierarchy</a>
+- <a href="https://github.com/pierreforstmann/pl-sql/blob/main/RFKH_README.md">retrieving foreign key hierarchy</a>
 
 SAAS code has been first published on my former Oracle blog in 2015 (excerpt still available on https://www.orafaq.com/aggregator/sources/469).
 
