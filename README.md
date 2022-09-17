@@ -27,3 +27,4 @@ Schema as a service code has been first published on my former Oracle blog in 20
 
 <a href=https://blogs.oracle.com/authors/steven-feuerstein> Steven Feuerstein official blog</a>
 
+<a href=https://asktom.oracle.com/Misc/oramag/first-things-first.html>First Things First</a>
