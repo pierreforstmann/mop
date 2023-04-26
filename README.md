@@ -13,6 +13,8 @@ Schema as a service code has been first published on my former Oracle blog in 20
 
 <a href="https://www.oracle.com/pls/topic/lookup?ctx=en/database/oracle/oracle-database/19&id=TDDDG10000">2 Day Developer's Guide: Create Applications with SQL and PL/SQL </a>
 
+<a href=https://github.com/Apress/mastering-oracle-pl-sql>Mastering Oracle PL/SQL source code</a>
+
 ### OTN
 <a href="https://www.oracle.com/database/technologies/appdev/plsql.html">PL/SQL on OTN</a>
 
